@@ -16,7 +16,10 @@ And alter jsreport configuration
   "name": "fs2",
   "sync": {
     "name": "azure-sb",
-    "connectionString": "..."    
+    "connectionString": "...",
+    // the rest is optional
+    "topic": "jsreport",
+    "subscription": "<host id>"    
   }
 },	
 ```
