@@ -1,4 +1,4 @@
-# jsreport-fs-store-aws-sns-sync
+# jsreport-fs-store-azure-sb-sync
 [![NPM Version](http://img.shields.io/npm/v/jsreport-fs-store-azure-sb-sync.svg?style=flat-square)](https://npmjs.com/package/jsreport-fs-store-azure-sb-sync)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-fs-store-azure-sb-sync.png?branch=master)](https://travis-ci.org/jsreport/jsreport-fs-store-azure-sb-sync)
 
@@ -10,7 +10,7 @@
 > npm install jsreport-fs-store:next    
 > npm install jsreport-fs-store-azure-sb-sync
 
-And alter jsreport configuration 
+Create an azure service bus and copy the connection string from the shared access policies. Then alter jsreport configuration:
 ```js
 "connectionString": { 
   "name": "fs2",
