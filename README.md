@@ -12,14 +12,21 @@
 
 Create an azure service bus and copy the connection string from the shared access policies. Then alter jsreport configuration:
 ```js
-"store": { 
-  "name": "fs",
-  "sync": {
-    "name": "azure-sb",
+"store": {
+  "provider": "fs"
+},
+"extensions": {
+  "fs-store": {
+    "sync": {
+      "provider": "azure-sb"
+    }
+  },
+  "fs-store-azure-sb-sync": {
     "connectionString": "...",
     // the rest is optional
     "topic": "jsreport",
-    "subscription": "<host id>"    
+    "subscription": "<host id>"  
   }
-},	
+}
+},
 ```
